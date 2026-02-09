@@ -19,7 +19,7 @@ pipeline {
         HOME = "${WORKSPACE}"
         DOCKER_CONFIG = "${WORKSPACE}/.docker"
         ROX_CENTRAL_ENDPOINT = credentials('ROX_CENTRAL_ENDPOINT')
-        /* GITOPS_AUTH_USERNAME = credentials('GITOPS_AUTH_USERNAME') */
+        GITOPS_AUTH_USERNAME = credentials('GITOPS_AUTH_USERNAME')
         /* Set this to the user for your specific registry */
         IMAGE_REGISTRY_USER = credentials('IMAGE_REGISTRY_USER')
         REKOR_HOST = credentials('REKOR_HOST')
@@ -33,7 +33,7 @@ pipeline {
         /* Set this password for your specific registry */
         IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD')
         /* Default registry is set to quay.io */
-        QUAY_IO_CREDS = credentials('QUAY_IO_CREDS')
+        /* QUAY_IO_CREDS = credentials('QUAY_IO_CREDS') */
         /* ARTIFACTORY_IO_CREDS = credentials('ARTIFACTORY_IO_CREDS') */
         /* NEXUS_IO_CREDS = credentials('NEXUS_IO_CREDS') */
         COSIGN_SECRET_PASSWORD = credentials('COSIGN_SECRET_PASSWORD')
